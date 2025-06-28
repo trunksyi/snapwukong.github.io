@@ -1,0 +1,240 @@
+:root {
+    --primary-color: #7B61FF;
+    --secondary-color: #00D9F5;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --card-bg: #ffffff;
+    --hover-color: #6344FF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.main-header {
+    text-align: center;
+    padding: 60px 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.logo-icon {
+    font-size: 2.5em;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-family: 'Righteous', cursive;
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+    opacity: 0.9;
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.feature-card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card i {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: var(--primary-color);
+    margin: 15px 0;
+}
+
+/* Legal Documents Section */
+.legal-docs {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.legal-docs h2 {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.doc-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.doc-card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doc-card:hover {
+    transform: translateY(-5px);
+}
+
+.doc-card i {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.doc-card h3 {
+    color: var(--primary-color);
+    margin: 15px 0;
+}
+
+.read-more {
+    color: var(--primary-color);
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.read-more i {
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-link {
+    color: var(--primary-color);
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: var(--hover-color);
+}
+
+.copyright {
+    color: #666;
+    margin: 10px 0;
+}
+
+.version {
+    color: #999;
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+/* Content Styles (for Privacy Policy and Terms pages) */
+.content {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+}
+
+.content h2 {
+    color: var(--primary-color);
+    margin-top: 40px;
+}
+
+.content ul {
+    padding-left: 20px;
+}
+
+.content li {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .main-header {
+        padding: 40px 20px;
+    }
+
+    .main-header h1 {
+        font-size: 2.5em;
+    }
+
+    .feature-card, .doc-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header h1 {
+        font-size: 2em;
+    }
+
+    .tagline {
+        font-size: 1em;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+} 
